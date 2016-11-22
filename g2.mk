@@ -162,6 +162,10 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    media.stagefright.codecremote=false \
+    media.stagefright.legacyencoder=true
+
 # NFC
 PRODUCT_PACKAGES += \
     Tag \
