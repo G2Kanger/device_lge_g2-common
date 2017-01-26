@@ -5,9 +5,8 @@
 # Diag
 /dev/diag_lge                                       u:object_r:diag_device:s0
 
-# GPU Thermal
-/sys/devices/fdb00000\.qcom,kgsl-3d0/kgsl/kgsl-3d0/gpuclk        u:object_r:sysfs_thermal:s0
-/sys/devices/fdb00000\.qcom,kgsl-3d0/kgsl/kgsl-3d0/max_gpuclk    u:object_r:sysfs_thermal:s0
+# Encryption
+/dev/block/platform/msm_sdcc\.1/by-name/encrypt     u:object_r:metadata_block_device:s0
 
 # Hwaddrs
 /data/misc/bdaddr                                   u:object_r:hwaddrs_data_file:s0
